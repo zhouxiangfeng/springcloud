@@ -1,0 +1,10 @@
+server:
+  port: 9100
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #是否讲自己注册到Eureka注册中心去，本身就是无需注册
+    fetch-registry: false #是否从Eureka注册中心获取注册信息
+    service-url: #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://localhost:${server.port}/eureka/
