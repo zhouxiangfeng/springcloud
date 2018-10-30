@@ -7,7 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PageController {
 
-     /**
+    StringBuilder stringBuilder = new StringBuilder();
+
+    public StringBuilder getStringBuilder() {
+        return stringBuilder;
+    }
+
+    /**
      * 用于页面跳转
      * @param page
      * @return
