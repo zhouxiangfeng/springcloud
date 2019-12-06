@@ -14,7 +14,7 @@ public class SellergoodsController {
 
     @RequestMapping("sayHello")
     public String sqyHello(){
-        return "hello springcloud" + discoveryClient.getServices();
+        return "hello springcloud 哈哈哈！" + discoveryClient.getServices();
     }
 
 }
